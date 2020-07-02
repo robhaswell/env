@@ -122,3 +122,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export GIT_PROMPT_THEME="Custom"
+
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    source $HOME/.bash-git-prompt/gitprompt.sh
+else
+    echo "Install bash-git-prompt: https://github.com/magicmonty/bash-git-prompt"
+fi
+
